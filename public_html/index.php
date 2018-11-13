@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="stylesheet" href="style.css?v=1" type="text/css"/>
 	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 	<script src="jquery-3.2.1.min.js"></script>
 	
@@ -92,7 +92,9 @@
 				<div class="relative background-image width-600px text-align-center justify-content-center akvarium" style="background-image:url('img/bgdefault.jpg')">
 
 					<div class="inner-content relative">
-					
+						
+						<div class="clickhere"><img class="clickhere-img" src="img/click.svg"/></div>
+
 						<div id="switch-container" class="height-100 flex popping-images">
 							<!-- <img class="float" src="img/model_FLOAT.png">
 							<img class="gold" src="img/model_GOLD.png"> -->
@@ -186,6 +188,7 @@
 	    }
 
 	    $('#switch-container').click( function( ) {
+	    	$('.clickhere').hide();
 	    	clicks = switchAll( clicks );
 	    });
 

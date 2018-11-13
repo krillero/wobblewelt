@@ -449,3 +449,17 @@ area:hover {
 div#preload { 
 	display: none; 
 }
+
+.clickhere {
+	position: absolute;
+	width: 40%;
+	height: 40%;
+	top: 30%;
+	left: 30%;
+	z-index: 99;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
